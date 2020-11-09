@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": ".\\target\\thumbv7em-none-eabihf\\debug\\led-roulette",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "serverpath": "C:\\OpenOCD\\bin\\openocd.exe",
+            "device": "STM32F303VC",
+            "configFiles": [
+                "C:\\OpenOCD\\scripts\\interface\\stlink.cfg",
+                "C:\\OpenOCD\\scripts\\target\\stm32f3x.cfg"
+            ],
+            "svdFile": "${workspaceRoot}\\STM32F303.svd"
+        }
+    ]
+}
